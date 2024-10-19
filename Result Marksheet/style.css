@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-image: url(image/nature.jpg);
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,7 +10,9 @@ body {
 }
 
 .result-container {
-    background-color: #ffffff;
+    backdrop-filter:blur(30px) ;
+    box-shadow: 0 0px 30px rgba(227, 228, 237, 0.37);
+    border: 2px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -32,7 +34,7 @@ body {
 }
 
 .result-container .highlight {
-    color: #1877f2;
+    color:  #262729;
     font-weight: bold;
 }
 
@@ -43,6 +45,14 @@ body {
     color: #fff;
     font-size: 1.2rem;
     border-radius: 5px;
+    cursor: default;
+    transition: transform 0.3s;
+}
+
+.result-container .remarks:hover{
+    transform: scale(1.1);
+    background-color:#ec19ff;
+    color:black;
 }
 
 @media (max-width: 480px) {
